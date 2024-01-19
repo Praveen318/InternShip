@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: #ff0000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* .chat_window {
+    position: absolute;
+    width: 80%;
+    max-width: 800px;
+    height: calc(100% - 180px);
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin-top: 20px;
+} */
+
+.chat_window {
+    position: absolute;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.top_menu {
+    background-color: #007bff;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+.top_menu .title {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.messages {
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 347px;
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.bottom_wrapper {
+    width: 100%;
+    background-color: #f8f9fa;  
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Change this line */
+}
+
+.message_input_wrapper {
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #bcbdc0;
+    width: calc(100% - 20px); /* Change this line */
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.send_message {
+    width: 100%; /* Change this line */
+    height: 50px;
+    border-radius: 50px;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* .bottom_wrapper {
+    width: 100%;
+    background-color: #f8f9fa;  
+    padding: 20px 20px;
+}
+
+.message_input_wrapper {
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #bcbdc0;
+    width: calc(100% - 160px);
+    position: relative;
+    padding: 0 20px;
+} */
+
+.message_input {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    position: absolute;
+    outline-width: 0;
+    color: gray;
+}
+
+/* .send_message {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+} */
+
+.send_message:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.send_message .text {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 48px;
+}
+
+/* #refreshBtn {
+    margin-top: 10px;
+} */
+
+.message_template {
+    text-align: center;
+}
+
+/*
+.message {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    clear: both; 
+}*/
+
+.text_wrapper {
+    display: inline-block;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    float: right;
+    clear: both; /* Add this line */
+}
+
+.bot-message {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    float: left;
+    clear: both; /* Add this line */
+}
+
+.upload_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#fileUpload {
+    width: calc(50% - 10px); /* Change this line */
+    margin-right: 20px;
+}
+
+#uploadBtn {
+    width: calc(50% - 10px); /* Change this line */
+    height: 50px;
+    border-radius: 50px;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+}
+/* Additional styles as needed... */
