@@ -11,20 +11,6 @@ body {
     color: white;
 }
 
-/* .chat_window {
-    position: absolute;
-    width: 80%;
-    max-width: 800px;
-    height: calc(100% - 180px);
-    border-radius: 10px;
-    background-color: #fff;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    overflow: auto;
-    margin-top: 20px;
-} */
 
 .chat_window {
     position: absolute;
@@ -76,7 +62,7 @@ body {
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Change this line */
+    align-items: stretch; 
 }
 
 .message_input_wrapper {
@@ -84,13 +70,13 @@ body {
     height: 50px;
     border-radius: 25px;
     border: 1px solid #bcbdc0;
-    width: calc(100% - 20px); /* Change this line */
+    width: calc(100% - 20px); 
     position: relative;
     padding: 0 20px;
     margin-bottom: 10px;
 }
 .send_message {
-    width: 100%; /* Change this line */
+    width: 100%; 
     height: 50px;
     border-radius: 50px;
     background-color: #007bff;
@@ -102,21 +88,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* .bottom_wrapper {
-    width: 100%;
-    background-color: #f8f9fa;  
-    padding: 20px 20px;
-}
-
-.message_input_wrapper {
-    display: inline-block;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid #bcbdc0;
-    width: calc(100% - 160px);
-    position: relative;
-    padding: 0 20px;
-} */
 
 .message_input {
     border: none;
@@ -128,18 +99,6 @@ body {
     color: gray;
 }
 
-/* .send_message {
-    width: 140px;
-    height: 50px;
-    display: inline-block;
-    border-radius: 50px;
-    background-color: #007bff;
-    border: 2px solid #007bff;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    text-align: center;
-} */
 
 .send_message:hover {
     color: #007bff;
@@ -153,25 +112,11 @@ body {
     line-height: 48px;
 }
 
-/* #refreshBtn {
-    margin-top: 10px;
-} */
 
 .message_template {
     text-align: center;
 }
 
-/*
-.message {
-    display: block;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-    clear: both; 
-}*/
 
 .text_wrapper {
     display: inline-block;
@@ -186,7 +131,7 @@ body {
     margin-bottom: 10px;
     text-align: left;
     float: right;
-    clear: both; /* Add this line */
+    clear: both; 
 }
 
 .bot-message {
@@ -197,7 +142,7 @@ body {
     margin-bottom: 10px;
     text-align: left;
     float: left;
-    clear: both; /* Add this line */
+    clear: both; 
 }
 
 .upload_wrapper {
@@ -208,12 +153,12 @@ body {
 }
 
 #fileUpload {
-    width: calc(50% - 10px); /* Change this line */
+    width: calc(50% - 10px); 
     margin-right: 20px;
 }
 
 #uploadBtn {
-    width: calc(50% - 10px); /* Change this line */
+    width: calc(50% - 10px); 
     height: 50px;
     border-radius: 50px;
     background-color: #007bff;
@@ -223,4 +168,5 @@ body {
     transition: all 0.2s linear;
     text-align: center;
 }
-/* Additional styles as needed... */
+
+

@@ -1,3 +1,22 @@
+$(document).ready(function(){
+    $('#uploadForm').on('submit', function(e){
+        e.preventDefault();
+        $('#uploadStatus').html('<p>Status: Processing...</p>');
+        $.ajax({
+            url: '/upload',
+            type: 'POST',
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            success: function(response){
+                $('#uploadStatus').html('<p>Status: '+response.status+'</p>');
+            }
+        });
+    });
+});
+
+
 (function () {
     var Message;
     Message = function (arg) {

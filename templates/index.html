@@ -26,15 +26,13 @@
                 <div class="icon"></div>
                 <div class="text">Send</div>
             </div>
-            <form action="/upload" method="post" enctype="multipart/form-data" class="upload_wrapper">
+            <form id="uploadForm" enctype="multipart/form-data" class="upload_wrapper">
                 <input type="file" name="file" id="fileInput" accept=".txt, .pdf, .doc, .docx">
                 <button type="submit">Upload</button>
             </form>
+            <div id="uploadStatus"></div>
         </div>
     </div>
-
-    <!-- <button id="refreshBtn" class="btn btn-primary form-control" onclick="location.reload()">Refresh</button> -->
-
     <div class="message_template">
         
         <div class="text_wrapper">
